@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="choseUrCharacter" class="Selection">
+        <article class="Selection__Characters Selection__Characters--Plant">
+          <img src="profefts/planta.png" alt="" />
+          <strong>Driger</strong>
+        </article>
+        <article class="Selection__Characters Selection__Characters--Fire">
+          <img src="profefts/fuego.png" alt="" />
+          <strong>Dranzer</strong>
+        </article>
+        <article class="Selection__Characters Selection__Characters--Water">
+          <img src="profefts/agua.png" alt="" />
+          <strong>Dragoon</strong>
+        </article>
+      </section>
+      <section id="Combat">
+        <figure class="computer">
+          <img src="profefts/agua.png" alt="" />
+        </figure>
+        <figure class="you">
+          <img src="profefts/planta.png" alt="" />
+        </figure>
+        <span class="computer">Dragoon</span>
+        <span class="you">Driger</span>
+        <progress class="computer" max="20" value="10"></progress>
+        <progress class="you" max="20" value="10"></progress>
+        <p>
+          victorias<br/>
+          <i id="counter">0</i>
+        </p>
+        <nav>
+          <ul>
+            <li><button type="button">🔥</button></li>
+            <li><button type="button">🌊</button></li>
+            <li><button type="button">🌳</button></li>
+            <li><button type="button">💊</button></li>
+          </ul>
+        </nav>
+      </section>
+      <section></section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

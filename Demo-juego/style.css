@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  --plant: #388e3c;
+  --plant_neon: #f2fde4;
+  --fire: #f44336;
+  --water: #29b6f6;
+}
+*{
+  /* border: 1px solid pink; */
+}
+
+#choseUrCharacter {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  /* display: none; */
+}
+
+.Selection__Characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  border-radius: 25px;
+  box-shadow: 8px 8px 20px 12px #aaa7a7f0;
+  padding: 8px;
+}
+.Selection__Characters img {
+  height: 225px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(10px 10px 5px #00000080);
+  transition: all .25s ease-in-out;
+}
+.Selection__Characters strong {
+  font-size: 2.5rem;
+  color: #263238;
+  text-align: center;
+  transition: all .25s ease-in-out;
+}
+
+.Selection__Characters--Plant {
+  background-color: var(--plant,green);
+}
+.Selection__Characters--Fire {
+  background-color: var(--fire, red);
+}
+.Selection__Characters--Water {
+  background-color: var(--water,blue);
+}
+
+.Selection__Characters:hover {
+  background-color: #000;
+}
+.Selection__Characters:hover strong {
+  filter: drop-shadow(1px 1px 5px #fff);
+  text-shadow: 2px 0px #fff, -2px 0px #fff, 
+               0px 2px #fff, 0px -2px #fff,
+               1px 1px #fff, -1px -1px #fff,
+               1px -1px #fff, -1px 1px #fff;
+}
+
+
+
+
+
+.Selection__Characters--Plant:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(30px 30px 7px var(--plant));
+}
+.Selection__Characters--Fire:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(30px 30px 7px var(--fire));
+}
+.Selection__Characters--Water:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(30px 30px 7px var(--water));
+}
+
+
+.Selection__Characters--Plant:hover strong {
+  transform: scale(1.2);
+  /* filter: drop-shadow(4px 4px 2px var(--plant)); */
+  color: var(--plant);
+}
+.Selection__Characters--Fire:hover strong {
+  transform: scale(1.2);
+  /* filter: drop-shadow(4px 4px 2px var(--fire)); */
+  color: var(--fire);
+}
+.Selection__Characters--Water:hover strong {
+  transform: scale(1.2);
+  /* filter: drop-shadow(4px 4px 2px var(--water)); */
+  color: var(--water);
+}
+
+
+
+#Combat{
+  display: grid;
+  grid-template-columns: repeat(5, 19vw);
+  grid-template-rows: 6.25vh 6.25vh 25vh 25vh 6.25vh 6.25vh auto;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 5px;
+  grid-template-areas: 'f1 f1 p1 p1 p1'
+                       'f1 f1 n1 n1 n1'
+                       'f1 f1 mc f2 f2'
+                       'f1 f1 mc f2 f2'
+                       'n2 n2 n2 f2 f2'
+                       'p2 p2 p2 f2 f2'
+                       'kp kp kp kp kp';
+}
+#Combat>p{
+  grid-area: mc;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Combat figure.computer{
+  grid-area: f1;
+  align-items: start;
+}
+#Combat figure.you{
+  grid-area: f2;
+  align-items: end;
+}
+
+#Combat progress.computer{
+  grid-area: p1;
+}
+#Combat progress.you{
+  grid-area: p2;
+  transform: rotate(180deg);
+}
+
+#Combat span.computer{
+  grid-area: n1;
+}
+#Combat span.you{
+  grid-area: n2;
+  text-align: right;
+}
+
+#Combat progress{
+  width: 90%;
+  align-self: center;
+  height: 35px;
+  justify-self: center;
+  
+}
+#Combat nav{
+  grid-area: kp;
+}
+#Combat nav ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+#Combat nav ul li{
+  display: block;
+}
+
+#Combat nav ul li button{
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  border: 0;
+  border-radius: 12.5px;
+}
+#Combat nav ul li button:active{
+  background-color: #00000080;
+  font-size: 4rem;
+}
+#Combat figure {
+  display: grid;
+  justify-items: center;
+}
+#Combat figure img{
+  width: 90%;
+  aspect-ratio: 1;
+  filter: drop-shadow(10px 10px 7px #0f0f0f);
+}
+#Combat span{
+  font-size: 3.2rem;
+}
