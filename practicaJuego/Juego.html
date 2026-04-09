@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Combate onichan</title>
+    <link rel="stylesheet" href="Juego.css">
+</head>
+<body>
+    <main>
+        <section class="Personajes">
+            <figure class="Eleccion">
+                <img class="Eleccion__Imagen" src="imagenes-juego/Fuego.png">
+                <img class="Eleccion__Gai" src="imagenes-juego/Gai.png">
+                <h1 class="Eleccion__Texto Eleccion__Texto--Yuna">Yuna</h1>
+            </figure>
+            <figure class="Eleccion">
+                <img class="Eleccion__Imagen" src="imagenes-juego/Planta.png">
+                <img class="Eleccion__Gai" src="imagenes-juego/Gai.png">
+                <h1 class="Eleccion__Texto Eleccion__Texto--Mitsuki">Mitsuki y Aya</h1>
+            </figure>
+            <figure class="Eleccion">
+                <img class="Eleccion__Imagen" src="imagenes-juego/Agua.png">
+                <img class="Eleccion__Gai" src="imagenes-juego/Gai.png">
+                <h1 class="Eleccion__Texto Eleccion__Texto--Baili">Baili Jin</h1>
+            </figure>
+        </section>
+        <section class="Combates">
+            <section class="Informacion">
+                <section class="Informacion__Jugadores Informacion__Jugadores--Yo">
+                    <figure class="Informacion__Jugador Informacion__Jugador--Yo">
+                        <img class="Informacion__Imagen Informacion__Imagen--Yo" src="imagenes-juego/Fuego.png">
+                    </figure>
+                    <footer class="Informacion__Personaje">
+                        <p class="Informacion__Personaje--Nombre">Yuna</p>
+                        <progress class="Informacion__Personaje--Vida" max="20" value="10"></progress>
+                    </footer>
+                </section>
+                <section class="Informacion__Victorias">
+                    <p class="Informacion__Victorias--Titulo">Victorias <br>
+                    <p class="Informacion__Victorias--Conteo">0</p>
+                </p>
+                 </section>
+                <section class="Informacion__Jugadores Informacion__Jugadores--Tu">
+                    <figure class="Informacion__Jugador Informacion__Jugador--Tu">
+                        <img class="Informacion__Imagen Informacion__Imagen--Tu" src="imagenes-juego/Planta.png">
+                    </figure>
+                    <footer class="Informacion__Personaje">
+                        <p class="Informacion__Personaje--Nombre">Mitsuki & Aya</p>
+                        <progress class="Informacion__Personaje--Vida" max="20" value="10"></progress>
+                    </footer>
+                </section>
+            </section>
+            <section class="Combates__Poderes">
+                <nav class="Combates__Contenedor">
+                    <ul class="Combates__Lista">
+                        <li class="Combates__Opcion Combates__Opcion--Fuego"><button type="button"><img class="Combates__Boton Combates__Boton--Fuego" src="imagenes-juego/poderFuego.png"></button></li>
+                        <li class="Combates__Opcion Combates__Opcion--Planta"><button type="button"><img  class="Combates__Boton Combates__Boton--Planta" src="imagenes-juego/poderPlanta.png"></button></li>
+                        <li class="Combates__Opcion Combates__Opcion--Agua"><button type="button"><img class="Combates__Boton Combates__Boton--Agua" src="imagenes-juego/poderAgua.png"></button></li>
+                        <li class="Combates__Opcion Combates__Opcion--Cura">
+                            <button type="button">
+                                <div class="Combates__Imagenes">
+                                    <img class="Combates__Boton Combates__Boton--Cura" src="imagenes-juego/Curacion.png">
+                                    <img class="Combates__Imagenes--Curada" src="imagenes-juego/Cuarada.png">
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+        <section></section>
+    </main>
+    <script src="Juego.js"></script>
+</body>
+</html>
