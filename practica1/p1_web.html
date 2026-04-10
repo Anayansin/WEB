@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Practica 1- Clasificacion de etiquetas HTML</title>
+</head>
+<body>
+
+<!-- CATEGORIA 1: Estructura del documento (Layout semantico) -->
+<!-- Etiquetas: header, nav, main, section, article, aside, footer -->
+
+<header>
+    <h1>Practica 1 - Clasificacion de etiquetas HTML</h1>
+    <p>Pagina que ejemplifica las 9 categorias de etiquetas HTML</p>
+</header>
+
+<nav>
+    <a href="#cat1">1. Estructura</a> |
+    <a href="#cat2">2. Texto</a> |
+    <a href="#cat3">3. Listas</a> |
+    <a href="#cat4">4. Multimedia</a> |
+    <a href="#cat5">5. Tablas</a> |
+    <a href="#cat6">6. Formularios</a> |
+    <a href="#cat7">7. Enlaces</a> |
+    <a href="#cat8">8. Metadatos</a> |
+    <a href="#cat9">9. Contenedores</a>
+</nav>
+
+<main>
+
+    <!-- esta etiqueta no es de esta parte pero es para la parte 7 -->
+    <section id="inicio">
+    <section id="cat1">
+    <h2>Categoria 1: </h2>
+    <p>Etiquetas que otorgan un sentido logico a las distintas partes de la pagina web, ayuda a los navegadores, lectores de pantalla y monitores de busqueda a entender el contenido</p>
+
+    <article>
+        <p>un articulo es un contenedor independinte que podria redistribuirse por si solo como una noticia o la entrada a un blog</p>
+
+        <aside>
+            <p>este bloque representa contenido relacionado pero secundario como podria ser publicidad o enlaces</p>
+        </aside>
+    </article>
+    </section>
+    </section>
+    <hr>
+
+    <!-- CATEGORIA 2: Contenido textual -->
+    <!-- Etiquetas: h1-h6, p, strong, em, mark, small, sub, sup, br, blockquote, code, pre -->
+    <section id="cat2">
+    <h2>Categoria 2: </h2>
+    
+    <h1>Etiqueta H1 que es para titulos</h1>
+    <h2>Etiqueta H2 que es para sub titulos</h2>
+    <h3>Etiqueta H3 que es para subsub titulos</h3>
+    <h4>Etiqueta H4 que es para subsubsub titulos</h4>
+    <h5>Etiqueta H5 que es para subsubsubsub titulos</h5>
+    <h6>Etiqueta H6 que es para subsubsubsubsub titulo</h6>
+    <p>Etiqueta p para texto</p>
+
+    <p> El texto tambien puede estar en <strong>negritas</strong> o en <em>cuersiva</em> podemos usar<mark> para resaltar</mark> tambien hacer <small>pequeño el texto</small></p>
+
+    <p> podemos agregar formulas matematicas: H<sub>2</sub>O y E = mc <sub>2</sub></p>
+
+    <!-- etiqueta sup para superindice -->
+    <p> ejemplo de superindice con sup: x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup></p>
+
+    <p>podemos hacer un salto de lineas con <br> br, esta etiqueta hace un salto de linea</p>
+
+    <blockquote>con esta etiqueta podemos hacer citas largas </blockquote>
+
+    <p>codigo en linea: <code>consol.log("Hola esta es la consola");</code></p>
+
+    <pre>
+        Etiqueta 
+        que respeta
+        los soaltos de linea
+        es utul para mosatrar cosas
+        en especifico
+    </pre>
+    </section>
+
+    <hr>
+
+    <!-- CATEGORIA 3: Listas -->
+    <!-- Etiquetas: ul, ol, li, dl, dt, dd -->
+    <section id="cat3">
+    <h2>Categoria 3: </h2>
+    <p>HTML nos brinda tres tipos de principales listas para organizar informacion</p>
+
+    <p>lista desordenada: </p>
+    <ul>
+        <li>Elemento uno </li>
+        <li>elemento dos</li>
+        <li>elemento tres</li>
+    </ul>
+
+    <p>Listas ordenadas: </p>
+
+    <ol>
+        <li>paso uno</li>
+        <li>paso dos</li>
+        <li>pase tres</li>
+    </ol>
+
+    <p>lista de definicion: </p>
+
+    <dl>
+        <dt>principal de la lsita sin sangria</dt>
+        <dd>elemento con sangria</dd>
+    </dl>
+    </section>
+
+    <hr>
+
+    <!-- CATEGORIA 4: Contenido multimedia -->
+    <!-- Etiquetas: img, figure, figcaption, iframe, audio, source -->
+    <section id="cat4">
+    <h2>Catecogia 4: </h2>
+
+    <p>estas son etiquetas que nos permiten mostar contenido multimendia</p>
+
+    <figure>
+        <!--para colocar una imagen necesitamos el png o el jpg yo le puse una medida porque se veia muy grande en pantalla-->
+        <img src="https://i.pinimg.com/1200x/92/23/36/922336c8b54dd9f719e5be15056a9180.jpg" alt="Mitsuki" width="300">
+        <figcaption>para colocar la fuente de la imagen </figcaption>
+    </figure>
+
+    <!--para esta etiqueta me fui a youtube para compartoir el link y utilice el insertar para sacar el codigo se que tambien se puede usar la etiqueta video pero necesito un video en mp4-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CID-sYQNCew?si=XhcSH-P7igtXpxRK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!--para esta etiqueta utilice la pagina https://www.w3schools.com/html/html5_audio.asp -->
+    <br>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    </section>
+
+    <hr>
+
+    <!-- CATEGORIA 5: Tablas -->
+    <!-- Etiquetas: table, caption, thead, tbody, tfoot, tr, th, td -->
+    <section id="cat5">
+    <h2>Categoria 5: </h2>
+
+    <table border="1">
+
+        <caption>Tabla de ejemplo con mis manhwas favoritos</caption>
+
+        <thead>
+            <tr>
+                <th>Nombre </th>
+                <th>calificacion </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>the boy i was interested in wasn't a boy </td>
+                <td>9.5/10</td>
+            </tr>
+            <tr>
+                <td>Bailijin among mortals</td>
+                <td>100/10</td>
+            </tr>
+            <tr>
+                <td>bad thiking diary</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>Bloom into you</td>
+                <td>100000/10</td>
+            </tr>
+            <tr>
+                <td>Meeting my ex girlfriend</td>
+                <td>8/10</td>
+            </tr>
+        </tbody>
+        <!-- tfoot para el pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td>Total de manhwas</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    </section>
+
+    <hr>
+
+    <!-- CATEGORIA 6: Formularios -->
+    <!-- Etiquetas: form, fieldset, legend, label, input, select, option, textarea, button -->
+    <section id="cat6">
+        <h2>Categoria 6: </h2>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos de manhwas</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" >
+                <br>
+                <label for="capitulos">Capitulos</label>
+                <input type="number">
+                <br>
+                <label for="Genero">Genero</label>
+                <input type="text">
+                <br>
+                <label for="Fecha">Fecha de estreno</label>
+                <input type="date">
+                <br>
+                <label for="conraseña">Y para agregar la contraseña que es este caso no es muy util pero para mostrar</label>
+                <input type="password">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <p>Genero: </p>
+                <input type="radio">
+                <label for="masc">masculino</label>
+                <br>
+                <input type="radio">
+                <label for="fem">Femenino</label>
+                <br>
+                <input type="radio">
+                <label for="otro">otro</label>
+
+                <br><br>
+
+                <p>Intereses: </p>
+                <input type="checkbox">
+                <label for="Jugar">jugar</label>
+                <br>
+                <input type="checkbox">
+                <label for="leer">Leer</label>
+                <br>
+                <input type="checkbox">
+                <label for="pintar">pintar</label>
+                <br>
+                <input type="checkbox">
+                <label for="deportes">deportes</label>
+                <br>
+
+                <label for="color favorito"></label><br>
+                <select name="colores" id="colores">
+                    <option value="">picale pa ver</option>
+                    <option value="rosa">rosa</option>
+                    <option value="morado">morado</option>
+                    <option value="azul">azul</option>
+                    <option value="negro">negro</option>
+                    <option value="rojo">rojo</option>
+                    <option value="amarillo">amarillo</option>
+                </select>
+
+                <label for="comentarios onichan">Comentarios: </label><br>
+                <textarea name="comentarios" id="comentarios"></textarea>
+
+                <label for="archivos">sube un archivo: </label><br>
+                <input type="file"><br>
+
+                <label for="rango">Califica esto: </label>
+                <input type="range" min="1" max="10" name="rango">
+            </fieldset>
+            <br>
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </section>
+
+    <hr>
+    <br>
+
+    <!-- CATEGORIA 7: Enlaces y navegacion -->
+    <!-- Etiquetas: a, nav, map, area -->
+    <section id="cat7">
+        <h2>Categoria 7: </h2>
+        <a href="https://youtu.be/2GJfWMYCWY0?si=lTCHsQ_QwQzqLEvQ">enlase externo</a>
+        <br>
+        <a href="#inicio">Vuelve al inicio</a>
+        <br>
+        <a href="mailto:a23100100@ceti.mx">enviar correo</a>
+        <br>
+        <a href="tel:+523325627038">llamar</a>
+        <br>
+        <p>picale para navegar: </p>
+
+        <img src="https://i.pinimg.com/1200x/6a/96/eb/6a96eb72792e119cdbe0679cc6189247.jpg"
+           alt="Lugar de trabajo" usemap="#mapatrabajo" width="400">
+        <map name="mapatrabajo">
+            <area shape="rect" coords="0,0,200,240"
+                  href="https://www.youtube.com/watch?v=00rwHTlBsFA" alt="Zona izquierda" target="_blank">
+            <area shape="rect" coords="200,0,400,240"
+                  href="https://www.youtube.com/watch?v=9P9XXAoFBq4&list=RD9P9XXAoFBq4&start_radio=1" alt="Zona derecha" target="_blank">
+        </map>
+    </section>
+
+    <br>
+    <hr>
+
+    <!-- CATEGORIA 8: Metadatos y configuracion -->
+    <!-- Etiquetas: html, head, meta, title, link, base -->
+    <section id="cat8">
+    <h2>Categoria 8: </h2>
+
+    <pre>
+        &lt;!-- Etiqueta raiz del documento --&gt;
+        &lt;html lang="es"&gt;
+
+        &lt;!-- Contenedor de metadatos --&gt;
+        &lt;head&gt;
+
+        &lt;!-- Codificacion de caracteres --&gt;
+        &lt;meta charset="UTF-8"&gt;
+
+        &lt;!-- Configuracion para dispositivos moviles --&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+        &lt;!-- Descripcion del sitio para motores de busqueda --&gt;
+        &lt;meta name="description" content="Página de categorías HTML"&gt;
+
+        &lt;!-- Autor del documento --&gt;
+        &lt;meta name="author" content="Estudiante"&gt;
+
+        &lt;!-- URL base para enlaces relativos --&gt;
+        &lt;base href=""&gt;
+
+        &lt;!-- Titulo de la pestaña del navegador --&gt;
+        &lt;title&gt;Practica 1- Clasificacion de etiquetas HTML&lt;/title&gt;
+
+        &lt;!-- Enlace a recursos externos --&gt;
+        &lt;link rel="icon" href="#"&gt;
+
+        &lt;/head&gt;
+    </pre>
+    </section>
+
+    <hr>
+    <br>
+
+    <!-- CATEGORIA 9: Contenedores genericos (no semanticos) -->
+    <!-- Etiquetas: div, span -->
+    <section id="cat9">
+    <h2>Categoria 9: </h2>
+
+    <div>
+        <p>este texto esta dentro de un div</p>
+        <br>
+        <div>
+            <p>este texto esta dentro de otro div</p>
+        </div>
+    </div>
+
+    <!-- etiqueta span para contenedor en linea -->
+    <p>el span se usa dentro del texto para marcar una parte especifica: el cielo es <span>azul</span> y el sol es <span>amarillo</span>, el span no agrega estilo por defecto</p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Practica 1 - Clasificacion de etiquetas HTML</p>
+    <p>Documento creado con HTML puro | Sin CSS | Sin JavaScript</p>
+</footer>
+
+</body>
+</html>
