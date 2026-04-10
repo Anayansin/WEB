@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+.pagina__encabezado {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.pagina__titulo {
+  margin: 0 0 12px;
+}
+
+.pagina__descripcion {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.panel {
+  padding: 20px 24px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+#marcador {
+  margin-bottom: 24px;
+}
+
+.marcador__contadores {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.marcador__item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.marcador__titulo {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+#titulo-marcador {
+  width: 100%;
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.marcador__titulo--victorias {
+  color: #1d4ed8;
+}
+
+.marcador__titulo--derrotas {
+  color: #b91c1c;
+}
+
+#contenido-principal {
+  margin-bottom: 24px;
+}
+
+#seleccion-personaje {
+  padding: 24px;
+}
+
+.seccion__encabezado {
+  margin-bottom: 24px;
+}
+
+.seccion__titulo {
+  margin: 0 0 8px;
+}
+
+.seccion__descripcion {
+  margin: 0;
+}
+
+.seleccion__columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.seleccion__bloque {
+  flex: 1;
+  min-width: 280px;
+}
+
+.seleccion__subtitulo {
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.seleccion__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.seleccion__acciones {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.boton-accion {
+  padding: 10px 16px;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  background-color: #e5e7eb;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#combate {
+  margin-top: 24px;
+  padding: 24px;
+}
+
+#participantes-combate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+#personaje-jugador,
+#personaje-oponente {
+  width: 280px;
+  padding: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+#vida-jugador,
+#vida-oponente {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.combate__acciones-finales {
+  margin-top: 16px;
+  text-align: center;
+}
+
+#registro-combate {
+  padding: 20px 24px;
+}
+
+#lista-registro {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}

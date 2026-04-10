@@ -1,0 +1,114 @@
+.personaje {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 240px;
+  min-height: 360px;
+  padding: 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 16px;
+  background-color: #f9fafb;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.personaje--seleccionable {
+  cursor: pointer;
+}
+
+.personaje--seleccionado {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #bfdbfe;
+}
+
+.personaje__nombre {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.personaje__imagen {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.personaje__datos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 8px;
+  margin: 0;
+}
+
+.personaje__atributo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #e5e7eb;
+}
+
+.personaje__etiqueta {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.personaje__valor {
+  display: inline-flex;
+  font-size: 0.95rem;
+}
+
+.personaje__icono {
+  font-size: 0.95rem;
+}
+
+.personaje__stats {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background-color: #eef2ff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+}
+
+.personaje__stats th {
+  padding: 8px 6px;
+  text-align: center;
+  background-color: #dbe4ff;
+  border: 1px solid #cbd5e1;
+}
+
+.personaje__stats td {
+  padding: 8px 6px;
+  text-align: center;
+  border: 1px solid #cbd5e1;
+}
+
+.personaje__acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.personaje__accion {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  background-color: #e5e7eb;
+  text-align: left;
+  cursor: pointer;
+}
+
+.personaje__accion:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}

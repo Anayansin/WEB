@@ -1,0 +1,20 @@
+.hoverText {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: help;
+}
+
+.hoverText:hover::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  top: -28px;
+  left: -10px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: #111827;
+  color: #ffffff;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}

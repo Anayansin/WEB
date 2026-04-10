@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego Sampai</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="personaje.css" />
+  </head>
+  <body>
+    <main>
+      <header class="pagina__encabezado">
+        <h1 class="pagina__titulo">Juego de cosas que se golpean porque no tengo nada mejor que hacer</h1>
+        <p class="pagina__descripcion">Selecciona tu personaje y prepárate para el combate.</p>
+      </header>
+
+      <section id="marcador" class="panel" aria-labelledby="titulo-marcador">
+        <h2 id="titulo-marcador" class="seccion__titulo">Marcador</h2>
+        <div class="marcador__contadores">
+          <div class="marcador__item">
+            <h3 class="marcador__titulo marcador__titulo--victorias">
+              Victorias: <span id="contador-victorias">0</span>
+            </h3>
+          </div>
+          <div class="marcador__item">
+            <h3 class="marcador__titulo marcador__titulo--derrotas">
+              Derrotas: <span id="contador-derrotas">0</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="contenido-principal" aria-label="Contenido principal del juego">
+        <section id="seleccion-personaje" class="panel" aria-labelledby="titulo-seleccion-personaje">
+          <header class="seccion__encabezado">
+            <h2 id="titulo-seleccion-personaje" class="seccion__titulo">Selecciona tu personaje</h2>
+          </header>
+
+          <div class="seleccion__columnas">
+            <section class="seleccion__bloque">
+              <h3 class="seleccion__subtitulo">Tu personaje</h3>
+              <ul id="lista-jugador" class="seleccion__lista"></ul>
+            </section>
+
+            <section class="seleccion__bloque">
+              <h3 class="seleccion__subtitulo">Tu contrincante</h3>
+              <ul id="lista-contrincante" class="seleccion__lista"></ul>
+            </section>
+          </div>
+
+          <div class="seleccion__acciones">
+            <button id="btn-confirmar-seleccion" class="boton-accion" type="button">Confirmar seleccion</button>
+          </div>
+        </section>
+
+        <section id="combate" class="panel" aria-labelledby="titulo-combate" hidden>
+          <header>
+            <h2 id="titulo-combate">Combate</h2>
+          </header>
+
+          <div id="participantes-combate">
+            <section id="personaje-jugador" aria-labelledby="titulo-personaje-jugador">
+              <h3 id="titulo-personaje-jugador">Tu personaje</h3>
+              <ul id="lista-combate-jugador" class="seleccion__lista"></ul>
+              <progress id="vida-jugador" max="100" value="100">100%</progress>
+            </section>
+
+            <section id="personaje-oponente" aria-labelledby="titulo-personaje-oponente">
+              <h3 id="titulo-personaje-oponente">Oponente</h3>
+              <ul id="lista-combate-oponente" class="seleccion__lista"></ul>
+              <progress id="vida-oponente" max="100" value="100">100%</progress>
+            </section>
+          </div>
+
+          <section id="acciones-combate" aria-labelledby="titulo-acciones-combate">
+            <h3 id="titulo-acciones-combate">Acciones disponibles</h3>
+          </section>
+
+          <footer class="combate__acciones-finales">
+            <button id="btn-volver-seleccion" class="boton-accion" type="button" hidden>Volver a seleccion de personaje</button>
+          </footer>
+        </section>
+      </section>
+
+      <footer id="registro-combate" class="panel" aria-labelledby="titulo-registro-combate">
+        <h2 id="titulo-registro-combate" class="seccion__titulo">Registro de acciones</h2>
+        <ol id="lista-registro"></ol>
+      </footer>
+    </main>
+    <script src="personajes.js"></script>
+    <script src="render-personajes.js"></script>
+    <script src="combate.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
