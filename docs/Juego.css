@@ -9,6 +9,13 @@
     align-items: center;
     justify-content: space-evenly;
 }
+body{
+    background-image: url(imagenes-juego/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .Eleccion{
     position: relative;
